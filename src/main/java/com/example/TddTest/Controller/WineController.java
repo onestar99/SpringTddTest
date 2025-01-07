@@ -19,6 +19,7 @@ public class WineController {
         this.wineRepository = wineRepository;
     }
 
+    // Green
     @PostMapping
     public ResponseEntity<Wine> createWine(@RequestBody Wine wine) {
         Wine savedWine = wineRepository.save(wine);

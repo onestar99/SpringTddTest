@@ -20,6 +20,8 @@ public class WineControllerTest {
 
     /**
      * 와인 생성 테스트
+     *
+     * RED;
      * @throws Exception
      */
     @Test
