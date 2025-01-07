@@ -18,6 +18,10 @@ public class WineControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    /**
+     * 와인 생성 테스트
+     * @throws Exception
+     */
     @Test
     void shouldCreateWine() throws Exception {
         String wineJson = """
@@ -38,5 +42,8 @@ public class WineControllerTest {
                 .andExpect(jsonPath("$.country").value("korea"))
                 .andExpect(jsonPath("$.variety").value("white"))
                 .andExpect(jsonPath("$.price").value(20.0));
+
     }
+
+
 }
